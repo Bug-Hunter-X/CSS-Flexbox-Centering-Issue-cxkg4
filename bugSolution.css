@@ -1,0 +1,17 @@
+To correctly center a div element using Flexbox, the parent container must also be a flex container. The height of the div is not needed to be explicitly declared and the height of the parent should be defined.
+```css
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: lightgray;
+}
+
+div {
+  background-color: lightblue;
+  height: 100px;
+  width: 100px;
+}
+```
