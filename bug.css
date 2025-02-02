@@ -1,0 +1,12 @@
+The following CSS rule is intended to center a div element both horizontally and vertically within its parent container. However, it does not work correctly in all browsers. 
+```css
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  background-color: lightblue;
+}
+```
+The issue lies in that `height: 200px` is explicitly set to the div; the parent element is needed to be set in order for the div to be centered within it. 
